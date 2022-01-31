@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const Speaker = require('./src/models/speakerSchema');
 require('./src/db/connect');
 const port = process.env.port || 3000;
+const host = '0.0.0.0';
 
 const static_path = path.join(__dirname, "./public");
 app.use(express.json())
@@ -59,6 +60,6 @@ app.get('/', function(req, res) {
 
 
 
-app.listen(port, () => {
+app.listen(port, host, () => {
     console.log("server is running at port no " + port);
 })
