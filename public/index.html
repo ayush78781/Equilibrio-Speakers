@@ -25,6 +25,8 @@
     <div class="bubble-3"></div>
     <div class="bubble-4"></div>
 
+   
+
     <div class="container">
         <div class="row main">
             <div class="text col-lg-8">
@@ -112,7 +114,7 @@
                 </h2>
                 <p class="noticepara"> Connect With Us </p>
                 <div class="col-12">
-                    <form method="POST" action="/submit" data-form-title="CONTACT US">
+                    <form method="POST" action="/submit" data-form-title="CONTACT US" id="myForm" onsubmit="return ajaxpost()">
                         <div class="row d-flex" style="margin-bottom: 2%;padding: 0%;">
                             <div class="col-md-6 col-12">
                                 <input type="hidden" data-form-email="true">
@@ -145,7 +147,7 @@
                         </div>
                         <div class="row text-center d-flex" style="margin-top: 2%;">
                             <div class="col-12">
-                                <button type="submit" class="btn">JOIN US</button>
+                                <button type="submit" class="btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">JOIN US</button>
                             </div>
 
                         </div>
@@ -155,6 +157,22 @@
         </div>
 
     </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h3 class="modal-title" id="staticBackdropLabel">Welcome Aboard !</h3>
+            </div>
+            <div class="modal-body text-center">
+              <h5>Your response has been submitted !</h5>
+            </div>
+            <div class="modal-footer text-center">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <article id="wrap">
         <article id="lightings">
@@ -206,6 +224,7 @@
             </section>
         </article>
     </article>
+    
 </body>
 
 </html>
