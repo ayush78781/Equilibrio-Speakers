@@ -1,27 +1,3 @@
-.modal-content{
-    background-color: plum;
-}
-.modal-title{
-    color: #080710;
-    font-weight: bold;
-}
-.modal-header, .modal-body, .modal-footer{
-    border-color: plum;
-}
-.btn-close{
-    color: white;
-    background-color: color;
-    border-color: white;
-}
-.modal-footer{
-    display: block;
-}
-.modal-body h5{
-    color: #110f1f;
-}
-.modal-header{
-    display: block;
-}
 @keyframes vawe {
     20% {
       border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
