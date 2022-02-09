@@ -36,9 +36,9 @@ app.post("/submit", async(req, res) => {
             })
 
             const speaker = await newSpeaker.save();
-            res.status(201).redirect("index.html");
+            res.status(201).redirect("message.html");
         } else {
-            res.redirect("index.html")
+            res.redirect("message.html")
         }
 
     } catch (error) {
@@ -53,7 +53,7 @@ app.get('/', function(req, res) {
     res.set({
         'Access-control-Allow-Origin': '*'
     });
-    return res.redirect('index.html');
+    return res.redirect('message.html');
 })
 
 
